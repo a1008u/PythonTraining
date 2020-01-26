@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.6.1
-    working_directory: ~/src
+    working_directory: ~/workspace
     steps:
       - checkout
 
@@ -35,9 +35,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            cd src/TwoSum
-            ls -la
-            python test_twosum.py test
+            python src/TwoSum/test_twosum.py test
 
       - store_artifacts:
           path: test-reports
