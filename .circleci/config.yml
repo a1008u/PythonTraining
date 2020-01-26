@@ -35,8 +35,9 @@ jobs:
       - run:
           name: run tests
           command: |
+            cd src/TwoSum
             . venv/bin/activate
-            python src/TwoSum/test_twosum.py test
+            python test_twosum.py test
 
       - store_artifacts:
           path: test-reports
