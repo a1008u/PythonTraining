@@ -14,11 +14,11 @@ jobs:
 #            # fallback to using the latest cache if no exact match is found
 #            - v1-dependencies-
 #
-#      - run:
-#          name: install dependencies
-#          command: |
-#            python3 -m venv venv
-#            . venv/bin/activate
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
 #            pip install -r requirements.txt
 #
 #      - save_cache:
@@ -35,7 +35,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            python -m src.TwoSum.test_twosum.py test
+            python test_twosum.py test
 
       - store_artifacts:
           path: test-reports

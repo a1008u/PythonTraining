@@ -1,3 +1,4 @@
+# coding: utf-8
 from typing import List
 
 class Solution:
@@ -24,4 +25,37 @@ class Solution:
                 break
             i = i+1
 
+        return [resultIndex1, resultIndex2]
+
+    def twoSumDict(self, nums: List[int], target: int) -> List[int]:
+
+        resultIndex1: int = 0
+        resultIndex2: int = 0
+
+        dic: dict = {}
+        for index, num in enumerate(nums):
+            dic[num] = index
+
+        for index, num in enumerate(nums):
+            wantedValue = target - num
+            if dic.get(wantedValue) and index != dic.get(wantedValue):
+                resultIndex1 = index
+                resultIndex2 = dic.get(wantedValue)
+                break
+
+        return [resultIndex1, resultIndex2]
+
+    def twoSumDictOnePass(self, nums: List[int], target: int) -> List[int]:
+
+        resultIndex1: int = 0
+        resultIndex2: int = 0
+
+        dic: dict = {}
+        for index, num in enumerate(nums):
+            wantedValue = target - num
+            if None != dic.get(wantedValue) and index != dic.get(wantedValue):
+                resultIndex1 = dic.get(wantedValue)
+                resultIndex2 = index
+                break
+            dic[num] = index
         return [resultIndex1, resultIndex2]
