@@ -27,10 +27,16 @@ jobs:
 #          key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       - run:
+          name: ls and pwd
+          command: |
+            ls -la
+            pwd
+
+      - run:
           name: run tests
           command: |
             . venv/bin/activate
-            python TwoSum/test_twosum.py test
+            python src/TwoSum/test_twosum.py test
 
       - store_artifacts:
           path: test-reports
