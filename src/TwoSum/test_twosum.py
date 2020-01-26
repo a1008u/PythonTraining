@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/src/TwoSum')
+
 import unittest
 from typing import List
 
