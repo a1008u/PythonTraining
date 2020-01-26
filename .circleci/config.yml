@@ -35,7 +35,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            python src/TwoSum/test_twosum.py test
+            python -m src.TwoSum.test_twosum.py test
 
       - store_artifacts:
           path: test-reports
