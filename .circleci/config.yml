@@ -36,7 +36,7 @@ jobs:
           name: run tests
           command: |
             cd src/TwoSum
-#            . venv/bin/activate
+            ls -la
             python test_twosum.py test
 
       - store_artifacts:
