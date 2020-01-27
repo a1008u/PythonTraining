@@ -5,7 +5,7 @@
 import unittest
 from typing import List
 
-from twosum import Solution
+from src.TwoSum.twosum import Solution
 
 
 class MyTestCase(unittest.TestCase):
