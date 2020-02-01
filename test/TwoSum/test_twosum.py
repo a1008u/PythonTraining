@@ -1,6 +1,12 @@
 # coding: utf-8
 import sys
+print(sys.version)
+print(sys.prefix)
+print(sys.path)
 sys.path.append('/src/TwoSum')
+print(sys.version)
+print(sys.prefix)
+print(sys.path)
 
 import unittest
 from typing import List
