@@ -15,6 +15,7 @@ services:
       true
     volumes:
       - ./src:/root/src/
+      - ./test:/root/test/
       - ~/.zshrc:/root/.zshrc
 
 #version: '3'

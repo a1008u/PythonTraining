@@ -1,6 +1,7 @@
 # coding: utf-8
 from typing import List
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
 
@@ -18,12 +19,12 @@ class Solution:
             if i == len(nums) - 1:
                 break
             wanted = target - nums[i]
-            rest = nums[i+1:]
+            rest = nums[i + 1:]
             if wanted in rest:
                 resultIndex1 = i
                 resultIndex2 = rest.index(wanted) + i + 1
                 break
-            i = i+1
+            i = i + 1
 
         return [resultIndex1, resultIndex2]
 
