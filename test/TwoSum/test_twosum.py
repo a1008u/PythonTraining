@@ -1,12 +1,9 @@
 # coding: utf-8
-import sys
-print(sys.version)
-print(sys.prefix)
-print(sys.path)
-sys.path.append('/home/circleci/workspace/src/TwoSum')
-print(sys.version)
-print(sys.prefix)
-print(sys.path)
+# import sys
+# sys.path.append('/home/circleci/workspace/src/TwoSum')
+# print(sys.version)
+# print(sys.prefix)
+# print(sys.path)
 
 import unittest
 from typing import List
