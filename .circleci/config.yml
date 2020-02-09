@@ -35,9 +35,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
-            cd test/TwoSum
-            python test_twosum.py test
+            cd test;python -m unittest
 
       - store_artifacts:
           path: test-reports
