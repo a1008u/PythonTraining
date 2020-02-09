@@ -7,15 +7,13 @@
 
 import os
 import sys
-
-
 import unittest
 from typing import List
 
 from src.TwoSum.twosum import Solution
 
 sys.path.append(os.getcwd())
-
+print(sys.path)
 
 class MyTestCase(unittest.TestCase):
     def test_twosumSuccess1(self):
