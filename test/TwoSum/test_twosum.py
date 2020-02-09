@@ -5,10 +5,16 @@
 # print(sys.prefix)
 # print(sys.path)
 
+import os
+import sys
+
+
 import unittest
 from typing import List
 
 from src.TwoSum.twosum import Solution
+
+sys.path.append(os.getcwd())
 
 
 class MyTestCase(unittest.TestCase):
