@@ -16,8 +16,7 @@ services:
     volumes:
       - ../src:/root/src/
       - ../test:/root/test/
-      - ../Leetcode:/root/Leetcode/
-      - ~/.zshrc:/root/.zshrc
+      - ./zsh/.zshrc:/root/.zshrc
 
 #version: '3'
 #services:
