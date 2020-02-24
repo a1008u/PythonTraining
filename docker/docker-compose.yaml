@@ -14,8 +14,9 @@ services:
     tty:
       true
     volumes:
-      - ./src:/root/src/
-      - ./test:/root/test/
+      - ../src:/root/src/
+      - ../test:/root/test/
+      - ../Leetcode:/root/Leetcode/
       - ~/.zshrc:/root/.zshrc
 
 #version: '3'

@@ -1,19 +1,13 @@
 # coding: utf-8
-# import sys
-# sys.path.append('/home/circleci/workspace/src/TwoSum')
-# print(sys.version)
-# print(sys.prefix)
-# print(sys.path)
-
-import os
 import sys
+sys.path.append('/root/src/')
+print(sys.path)
+print(dir())
+
 import unittest
 from typing import List
 
-from src.TwoSum.twosum import Solution
-
-sys.path.append(os.getcwd())
-print(sys.path)
+from TwoSum.twosum import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_twosumSuccess1(self):
@@ -21,6 +15,7 @@ class MyTestCase(unittest.TestCase):
         """
         nums: List[int] = [2, 3, 7, 321]
         target: int = 9
+
         solution: Solution = Solution()
         twosumResult: List[int] = solution.twoSum(nums, target)
 

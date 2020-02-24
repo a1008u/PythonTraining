@@ -1,9 +1,13 @@
 # coding: utf-8
+import sys
+sys.path.append('/root/src/')
+print(sys.path)
+print(dir())
 
 import string
 import unittest
 
-from src.RomanToInt.romantoint import Solution
+from RomanToInt.romantoint import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_romantoint_ok_1(self):

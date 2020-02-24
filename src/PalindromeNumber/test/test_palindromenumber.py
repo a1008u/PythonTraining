@@ -1,6 +1,11 @@
-import unittest
+# coding: utf-8
+import sys
+sys.path.append('/root/src/')
+print(sys.path)
+print(dir())
 
-from src.PalindromeNumber.palindromenumber import Solution
+import unittest
+from PalindromeNumber.palindromenumber import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_ispalindrome_ok_1(self):

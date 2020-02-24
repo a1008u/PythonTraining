@@ -1,11 +1,13 @@
 # coding: utf-8
-# import sys
-# sys.path.append('/src/ReverseInteger')
+import sys
+sys.path.append('/root/src/')
+print(sys.path)
+print(dir())
 
 import unittest
 from typing import List
 
-from src.ReverseInteger.reverseinteger import Solution
+from ReverseInteger.reverseinteger import Solution
 
 
 class MyTestCase(unittest.TestCase):
