@@ -4,7 +4,7 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 
-from src.Algorithm.MergeSort import Solution
+from Algorithm.MergeSort import Solution
 
 
 class MyTestCase(unittest.TestCase):

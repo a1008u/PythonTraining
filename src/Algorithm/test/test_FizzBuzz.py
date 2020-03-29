@@ -4,7 +4,7 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 
-from src.Algorithm.FizzBuzz import Solution
+from Algorithm.FizzBuzz import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_fizzbuzz_v1(self):

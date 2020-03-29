@@ -4,7 +4,7 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 
-from src.Algorithm.BubbleSort import Solution
+from Algorithm.BubbleSort import Solution
 
 
 class MyTestCase(unittest.TestCase):

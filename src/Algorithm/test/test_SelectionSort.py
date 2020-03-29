@@ -4,7 +4,7 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 
-from src.Algorithm.SelectionSort import Solution
+from Algorithm.SelectionSort import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
