@@ -23,6 +23,5 @@ class MyTestCase(unittest.TestCase):
 
         self.assertEqual(sorted(nums2), results)
 
-
 if __name__ == '__main__':
     unittest.main()

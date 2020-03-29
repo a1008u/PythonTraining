@@ -1,6 +1,9 @@
 # coding: utf-8
 from typing import List
 
+from Algorithm.StopWatch import stop_watch
+
+@stop_watch
 class Solution:
     def bubble_sort(self, nums: List[int]) -> List[int]:
 

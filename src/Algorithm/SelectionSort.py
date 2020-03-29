@@ -1,7 +1,8 @@
 # coding: utf-8
 from typing import List
 
-from src.StopWatch import stop_watch
+from Algorithm.StopWatch import stop_watch
+
 
 @stop_watch
 class Solution:
