@@ -1,13 +1,18 @@
 FROM python:3
+
 USER root
 
 RUN apt-get update
 RUN apt-get install -y vim less
 RUN apt-get install -y zsh less
+RUN apt-get install -y fish less
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install pep8
 RUN pip install autopep8
+
+# GCPのSDKをインストール
+RUN pip install --upgrade google-cloud-storage
 
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
