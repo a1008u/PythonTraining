@@ -17,3 +17,33 @@ Pythonの一般的なルール
 |定数名| ALL_CAPS_WITH_UNDERSCORES | PI、TAX_RATE|
 |インデント| レベルごとに4つのスペース、タブなし|	 |
 |比較| my_var: my_varでない場合は、明示的にTrueまたはFalseと比較しない。| |
+
+
+|Python type         |Immutable?                | Hashable? | Dictionary key?|
+|--------------------|--------------------------|-----------|----------------|
+|int |Yes	|Yes	|Yes|
+|float	|Yes	|Yes	|Yes|
+|boolean	|Yes	|Yes	|Yes|
+|complex	|Yes	|Yes	|Yes|
+|str	|Yes	|Yes	|Yes|
+|bytes	|Yes	|Yes	|Yes|
+|bytearray	|No	|No	|No|
+|list	|No	|No	|No|
+|tuple	|Yes	|Sometimes	|Sometimes|
+|set	|No	|No	|No|
+|frozenset	|Yes	|Yes	|Yes|
+|dictionary	|No	|No	|No|
+
+## Boolean
+- 0, 0.0, 0+0jは全てFalseであり、それ以外の数値は全てTrueである。
+- 空の文字列 "" は False であり、その他の文字列はすべて True です。
+- 空のリスト [] は False、その他のリストは True です。
+- 空の辞書 {} は False であり、他のどの辞書も True です。
+- 空のset set() は False、他のセットは True です。
+- Python の特別な値 None は常に False です。
+
+```python
+# 同じ意味になる。
+if 0 < x and x < 10:
+if 0 < x < 10:
+```
