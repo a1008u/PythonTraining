@@ -4,3 +4,4 @@
 Pythonの理解を深めるためのトレーニング用
 
 issueとbranchの紐付け確認
+issueとbranchの紐付け確認２
