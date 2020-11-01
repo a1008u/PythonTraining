@@ -2,7 +2,7 @@
 from typing import List
 import logging
 
-from Algorithm.StopWatch import stop_watch
+from src.Algorithm.StopWatch import stop_watch
 
 @stop_watch
 class Solution:

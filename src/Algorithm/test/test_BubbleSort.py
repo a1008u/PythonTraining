@@ -1,10 +1,16 @@
 import unittest
-import sys
+import sys, os
+from typing import List
+
+print('prepare test start-----------------------')
+path = os.path.join(os.path.dirname(__file__), '../../../')
+sys.path.append(path)
 sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
+print('prepare test end-----------------------')
 
-from Algorithm.BubbleSort import Solution
+from src.Algorithm.BubbleSort import Solution
 
 
 class MyTestCase(unittest.TestCase):
