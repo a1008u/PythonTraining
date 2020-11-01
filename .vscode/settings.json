@@ -1,0 +1,7 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.pythonPath": "/usr/local/bin/python",
+  "editor.fontFamily": "Fria Code",
+  "terminal.integrated.fontFamily": "knack Nerd Font"
+}
