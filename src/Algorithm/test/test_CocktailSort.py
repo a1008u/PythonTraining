@@ -12,6 +12,7 @@ print('prepare test end-----------------------')
 
 from src.Algorithm.CocktailSort import Solution
 
+
 class MyTestCase(unittest.TestCase):
     def test_something(self):
         nums: List[int] = [6, 15, 4, 2, 8, 5, 11, 9, 7, 13]
