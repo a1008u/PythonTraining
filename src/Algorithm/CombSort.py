@@ -10,16 +10,17 @@ class Solution:
 
         '''
         comb_sortの説明
-        swapを利用して変更があったか目印（印）を利用し、
-        対象データを-> , <-の流れで入れ替えていく。
+        gapを利用して、ソートをかける。
 
         BubbleSortの改良
 
-        対象データ: 2,1,5,8,7,3 swap=false
+        対象データ: 2,1,5,8,7,3
 
-        - 1回目→: 1,2,5,3,7 | 8 swap=true
-        - 2回目←: 1,2,3,5 | 7,8 swap=true
-        - 3回目→: 1,2,3 | 5,7,8 swap=false
+        - 1回目: 2,1,5,8,7,3 swap=false　gap: 4 = 6/ 1.3
+        - 2回目: 2,1,3,8,7,5 swap=false　gap: 3 = 4/ 1.3
+        - 3回目: 2,1,3,5,7,8 swap=false　gap: 2 = 3/ 1.3
+        - 4回目: 1,2,3,5,7,8 swap=false　gap: 1 = 2/ 1.3
+        - 5回目: 1,2,3,5,7,8 swap=true    gap: 1
         '''
 
         len_nums: int = len(nums)
