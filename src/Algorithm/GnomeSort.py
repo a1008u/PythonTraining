@@ -12,8 +12,7 @@ class Solution:
         '''
         gnome_sortの説明
 
-
-        GnomeSortの改良
+        BubleSortの改良
 
         対象データ: 2,1,5,8,7,3
 
