@@ -1,7 +1,7 @@
 name: sample
 on: [push, pull_request]
 jobs:
-  say hello:
+  say_hello:
     runs-on: ubuntu-latest
     steps:
       - run: echo hello github acitons
