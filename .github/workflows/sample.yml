@@ -5,3 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo hello github acitons
+      - run: echo ${{ github.event_name }} is event name
