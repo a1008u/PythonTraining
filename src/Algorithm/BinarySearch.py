@@ -16,6 +16,14 @@ class Solution:
 
     @stop_watch
     def binary_search(self, nums:List[int], value:int) -> IndexNum:
+
+        """
+        対象データ: 1,2,3,4,5,7,8 value:2
+
+        - 1回目: 1,2,3,4,5,7,8 mid:4 value:2 → midより小さい
+        - 2回目: 1,2,3 mid:2 value:2 -> 一致
+        """
+
         left, right = 0, len(nums) -1
 
         while left <= right:
