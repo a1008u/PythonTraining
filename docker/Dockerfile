@@ -10,6 +10,7 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install pep8
 RUN pip install autopep8
+RUN pip install coverage
 
 # GCPのSDKをインストール
 RUN pip install --upgrade google-cloud-storage
