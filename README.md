@@ -2,3 +2,12 @@
 
 # PythonTraining
 Pythonの理解を深めるためのトレーニング用
+
+
+```
+# pythonのテストコード全てを実行する
+coverage -m unittest
+
+# covrageのレポートをみる
+coverage report -m
+```

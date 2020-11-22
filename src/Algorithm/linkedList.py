@@ -1,10 +1,12 @@
 from __future__ import annotations
 from typing import Any
 
+
 class Node:
-    def __init__(self, data:Any, next_node: Node = None) -> None:
+    def __init__(self, data: Any, next_node: Node = None) -> None:
         self.data = data
         self.next = next_node
+
 
 class LinkedList:
     def __init__(self) -> None:
@@ -16,7 +18,7 @@ class LinkedList:
             self.head = new_node
             return
 
-        last_node:Node = self.head
+        last_node: Node = self.head
         while last_node.next:
             last_node = last_node.next
         last_node.next = new_node
