@@ -18,8 +18,18 @@ jobs:
           echo ${{ github.event_name }} is event name
           echo ${{ github.run_id }} is github.run_id
           echo ${{ job.status }} is job.status
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: exec python test
         run: |
           ls -la
           cd src
-          python -m unittest
+          coverage run -m unittest
+      - name: ck coverage
+        run: |
+          ls -la
+          cd src
+          coverage report -m
