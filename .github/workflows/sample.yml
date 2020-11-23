@@ -3,9 +3,19 @@ on: [push, pull_request]
 jobs:
   say_hello:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 2.7, 3.8, 3.9 ]
     steps:
-      - run: echo hello github acitons
-      - run: echo ${{ github.event_name }} is event name
-      - run: echo ${{ github.run_id }} is github.run_id
-      - run: echo ${{ job.status }} is job.status
-
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: echo hello github acitons - start -
+        run: |
+          echo python -c "import sys; print(sys.version)"
+          echo #############################################
+          echo ${{ github.event_name }} is event name
+          echo ${{ github.run_id }} is github.run_id
+          echo ${{ job.status }} is job.status
