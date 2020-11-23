@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [ 2.7, 3.8, 3.9 ]
+        python-version: [ 3.8, 3.9 ]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
@@ -14,8 +14,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: echo hello github acitons - start -
         run: |
-          echo python -c "import sys; print(sys.version)"
-          echo #############################################
+          python -c "import sys; print(sys.version)"
           echo ${{ github.event_name }} is event name
           echo ${{ github.run_id }} is github.run_id
           echo ${{ job.status }} is job.status
+          ls -la
