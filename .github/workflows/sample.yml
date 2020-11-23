@@ -19,7 +19,7 @@ jobs:
           echo ${{ github.run_id }} is github.run_id
           echo ${{ job.status }} is job.status
       - name: exec python test
-        run:
+        run: |
           ls -la
           cd src
           python -m unittest
