@@ -1,4 +1,4 @@
-name: sample
+name: python_test
 on: [push, pull_request]
 jobs:
   say_hello:
