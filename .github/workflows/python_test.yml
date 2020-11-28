@@ -25,7 +25,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: exec ck style with flake8
         run: |
-          cd src
+          cd src/Algorithm
           # Python 構文エラーまたは未定義の名前がある場合はビルドを停止する
           flake8 . --count --select=E9,F63,F7,F821 --show-source --statistics
           # exit-zeroはすべてのエラーを警告として扱う。 GitHubのエディタの幅は127文字
@@ -33,10 +33,10 @@ jobs:
       - name: exec python test
         run: |
           ls -la
-          cd src
+          cd src/Algorithm
           coverage run -m unittest
       - name: ck coverage
         run: |
           ls -la
-          cd src
+          cd src/Algorithm
           coverage report -m
