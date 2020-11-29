@@ -33,10 +33,10 @@ jobs:
       - name: exec python test
         run: |
           ls -la
-          cd src/Algorithm
+          cd src
           coverage run -m unittest
       - name: ck coverage
         run: |
           ls -la
-          cd src/Algorithm
+          cd src
           coverage report -m
