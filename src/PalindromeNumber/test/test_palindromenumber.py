@@ -5,7 +5,7 @@ print(sys.path)
 print(dir())
 
 import unittest
-from PalindromeNumber.palindromenumber import Solution
+from src.PalindromeNumber.palindromenumber import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_ispalindrome_ok_1(self):

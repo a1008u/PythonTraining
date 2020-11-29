@@ -4,7 +4,7 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 
-from LongestCommonPrefix.longestcommonprefix import Solution
+from src.LongestCommonPrefix.longestcommonprefix import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_something_v1(self):
