@@ -1,5 +1,7 @@
+from src.Algorithm.linkedList import LinkedList
 import unittest
-import sys, os
+import sys
+import os
 from typing import List
 
 print('prepare test start-----------------------')
@@ -9,8 +11,6 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 print('prepare test end-----------------------')
-
-from src.Algorithm.linkedList import LinkedList
 
 
 class MyTestCase(unittest.TestCase):
@@ -53,20 +53,23 @@ class MyTestCase(unittest.TestCase):
         results2.append(2)
         results2.append(4)
         results2.append(6)
-        expectsreverse3: List[int] = [6,4,2,1,6,4,2]
+        expectsreverse3: List[int] = [6, 4, 2, 1, 6, 4, 2]
 
         results2.reverse_even()
         self.assertEqual(expectsreverse3[0], results2.head.data)
         self.assertEqual(expectsreverse3[1], results2.head.next.data)
         self.assertEqual(expectsreverse3[2], results2.head.next.next.data)
         self.assertEqual(expectsreverse3[3], results2.head.next.next.next.data)
-        self.assertEqual(expectsreverse3[4], results2.head.next.next.next.next.data)
-        self.assertEqual(expectsreverse3[5], results2.head.next.next.next.next.next.data)
-        self.assertEqual(expectsreverse3[6], results2.head.next.next.next.next.next.next.data)
-
+        self.assertEqual(
+            expectsreverse3[4],
+            results2.head.next.next.next.next.data)
+        self.assertEqual(
+            expectsreverse3[5],
+            results2.head.next.next.next.next.next.data)
+        self.assertEqual(
+            expectsreverse3[6],
+            results2.head.next.next.next.next.next.next.data)
 
 
 if __name__ == '__main__':
     unittest.main()
-
-

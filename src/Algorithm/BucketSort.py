@@ -5,6 +5,7 @@ from typing import List
 from src.Algorithm import InsertionSort
 from src.Algorithm.StopWatch import stop_watch
 
+
 class Solution:
     """
     bubble sortのイメージ
@@ -28,7 +29,6 @@ class Solution:
     @stop_watch
     def bucket_sort(self, nums: List[int]) -> List[int]:
 
-        max_num: int = max(nums)
         size: int = 6
 
         # bucketsへsort対象の値を分ける

@@ -26,15 +26,23 @@ class Solution:
                 same = 1
 
         logging.info("----------------------------")
-        logging.info('left is %s | [pivot] * same is %s | right is %s',  left, [pivot] * same, right)
+        logging.info(
+            'left is %s | [pivot] * same is %s | right is %s',
+            left,
+            [pivot] * same,
+            right)
         logging.info("----------------------------")
 
         left: List[int] = self.quick_sort(left)
         right: List[int] = self.quick_sort(right)
 
         logging.info("=========================")
-        logging.info('left is %s | [pivot] * same is %s | right is %s', left, [pivot] * same, right)
-        logging.info('result is %s',  left + [pivot] * same + right)
+        logging.info(
+            'left is %s | [pivot] * same is %s | right is %s',
+            left,
+            [pivot] * same,
+            right)
+        logging.info('result is %s', left + [pivot] * same + right)
         logging.info("=========================")
         return left + [pivot] * same + right
 
@@ -52,21 +60,25 @@ class Solution:
         right: List[int] = self.quick_sort2(right)
 
         logging.info("=========================")
-        logging.info('left is %s | [pivot] * same is %s | right is %s', left, [pivot], right)
-        logging.info('result is %s',  left + [pivot] + right)
+        logging.info(
+            'left is %s | [pivot] * same is %s | right is %s',
+            left,
+            [pivot],
+            right)
+        logging.info('result is %s', left + [pivot] + right)
         logging.info("=========================")
         return left + [pivot] + right
 
     @stop_watch
-    def partition(self, nums: List[int], low: int, high:int) -> int:
+    def partition(self, nums: List[int], low: int, high: int) -> int:
         i: int = low - 1
         pivot: int = nums[high]
         for j in range(low, high):
             if nums[j] <= pivot:
                 i += 1
                 nums[i], nums[j] = nums[j], nums[i]
-        nums[i+1], nums[high] = nums[high], nums[i+1]
-        return i+1
+        nums[i + 1], nums[high] = nums[high], nums[i + 1]
+        return i + 1
 
     @stop_watch
     def quick_sort3(self, nums: List[int]) -> List[int]:
@@ -93,7 +105,7 @@ class Solution:
         def _quick_sort(nums: List[int], low: int, high: int) -> None:
             if low < high:
                 partition_index: int = self.partition(nums, low, high)
-                _quick_sort(nums, low, partition_index-1)
+                _quick_sort(nums, low, partition_index - 1)
                 _quick_sort(nums, partition_index + 1, high)
 
         _quick_sort(nums, 0, len(nums) - 1)

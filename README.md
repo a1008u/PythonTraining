@@ -21,5 +21,6 @@ coverage report -m
 flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
 
 # コード修正
-autopep8 --in-place --aggressive --aggressive　<filename>
+autopep8 --in-place --aggressive　<filename>
 ```
+

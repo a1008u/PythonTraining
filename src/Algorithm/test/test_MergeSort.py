@@ -1,5 +1,7 @@
+from src.Algorithm.MergeSort import Solution
 import unittest
-import sys, os
+import sys
+import os
 from typing import List
 
 print('prepare test start-----------------------')
@@ -9,8 +11,6 @@ sys.path.append('/root/src/')
 print(sys.path)
 print(dir())
 print('prepare test end-----------------------')
-
-from src.Algorithm.MergeSort import Solution
 
 
 class MyTestCase(unittest.TestCase):
@@ -29,6 +29,7 @@ class MyTestCase(unittest.TestCase):
         results: List[int] = solution.merge_sort2(nums)
 
         self.assertEqual(sorted(nums2), results)
+
 
 if __name__ == '__main__':
     unittest.main()

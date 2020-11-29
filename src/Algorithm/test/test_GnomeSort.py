@@ -1,5 +1,7 @@
+from src.Algorithm.GnomeSort import Solution
 import unittest
-import sys, os
+import sys
+import os
 from typing import List
 
 print('prepare test start-----------------------')
@@ -10,8 +12,6 @@ print(sys.path)
 print(dir())
 print('prepare test end-----------------------')
 
-
-from src.Algorithm.GnomeSort import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
