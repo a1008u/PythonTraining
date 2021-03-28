@@ -8,7 +8,6 @@ class Solution:
 
     @stop_watch
     def count_sort(self, nums: List[int]) -> List[int]:
-
         '''
         Shell_Sortの説明
         事前にGAPを決めて、そちらを使って一定の区間でsortをしていく
@@ -37,12 +36,12 @@ class Solution:
             counts[num] += 1
 
         for i in range(1, len(counts)):
-            counts[i] += counts[i-1]
+            counts[i] += counts[i - 1]
 
         i: int = len(nums) - 1
         while i >= 0:
             index: int = nums[i]
-            result[counts[index]-1] = nums[i]
+            result[counts[index] - 1] = nums[i]
             counts[index] -= 1
             i -= 1
 

@@ -8,15 +8,14 @@ IndexNum = NewType('IndexNum', int)
 class Solution:
 
     @stop_watch
-    def linear_seach(self, nums:List[int], value: int) -> IndexNum:
+    def linear_seach(self, nums: List[int], value: int) -> IndexNum:
         for i in range(0, len(nums)):
             if nums[i] == value:
                 return i
         return -1
 
     @stop_watch
-    def binary_search(self, nums:List[int], value:int) -> IndexNum:
-
+    def binary_search(self, nums: List[int], value: int) -> IndexNum:
         """
         対象データ: 1,2,3,4,5,7,8 value:2
 
@@ -24,10 +23,10 @@ class Solution:
         - 2回目: 1,2,3 mid:2 value:2 -> 一致
         """
 
-        left, right = 0, len(nums) -1
+        left, right = 0, len(nums) - 1
 
         while left <= right:
-            mid:int = (left+right)//2
+            mid: int = (left + right) // 2
             if nums[mid] == value:
                 return mid
             elif nums[mid] < value:
@@ -37,12 +36,13 @@ class Solution:
         return -1
 
     @stop_watch
-    def binary_search2(self, nums:List[int], value:int) -> IndexNum:
-        def _binary_search(nums:List[int], value:int, left:IndexNum, right:IndexNum) -> IndexNum:
+    def binary_search2(self, nums: List[int], value: int) -> IndexNum:
+        def _binary_search(
+                nums: List[int], value: int, left: IndexNum, right: IndexNum) -> IndexNum:
             if left > right:
                 return -1
 
-            mid:int = (left+right)//2
+            mid: int = (left + right) // 2
             if nums[mid] == value:
                 return mid
             elif nums[mid] < value:

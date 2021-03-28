@@ -8,7 +8,6 @@ class Solution:
 
     @stop_watch
     def insertion_sort(self, nums: List[int]) -> List[int]:
-
         '''
         Insertion_sortの説明
         最大実行数は対象データの個数=1の回数分データのソートを行う。

@@ -8,7 +8,6 @@ class Solution:
 
     @stop_watch
     def gnome_sort(self, nums: List[int]) -> List[int]:
-
         '''
         gnome_sortの説明
 
@@ -28,11 +27,10 @@ class Solution:
             if index == 0:
                 index += 1
 
-            if nums[index] >= nums[index-1]:
+            if nums[index] >= nums[index - 1]:
                 index += 1
             else:
-                nums[index], nums[index-1] = nums[index-1], nums[index]
+                nums[index], nums[index - 1] = nums[index - 1], nums[index]
                 index -= 1
 
         return nums
-

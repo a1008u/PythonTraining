@@ -1,5 +1,7 @@
+from src.Algorithm.QuickSort import Solution
 import unittest
-import sys, os
+import sys
+import os
 from typing import List
 
 print('prepare test start-----------------------')
@@ -10,7 +12,6 @@ print(sys.path)
 print(dir())
 print('prepare test end-----------------------')
 
-from src.Algorithm.QuickSort import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
@@ -36,6 +37,7 @@ class MyTestCase(unittest.TestCase):
         results: List[int] = solution.quick_sort3(nums)
 
         self.assertEqual(sorted(nums2), results)
+
 
 if __name__ == '__main__':
     unittest.main()

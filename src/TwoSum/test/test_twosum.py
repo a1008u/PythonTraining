@@ -7,7 +7,7 @@ print(dir())
 import unittest
 from typing import List
 
-from TwoSum.twosum import Solution
+from src.TwoSum.twosum import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_twosumSuccess1(self):

@@ -5,6 +5,7 @@ from typing import List
 from src.Algorithm import InsertionSort
 from src.Algorithm.StopWatch import stop_watch
 
+
 class Solution:
     """
     bubble sortのイメージ
@@ -20,14 +21,14 @@ class Solution:
     - index:5の入れ物[]
 
     ### こちらでInsertion Sortを実行
-    - index:0の入れ物[2,1,5,3] → 1 | 2, 5, 3  → 1 ,2 |  5, 3 ->  1 ,2, 3 | 5 -> 1,2,3,5
+    - index:0の入れ物[2,1,5,3]
+        → 1 | 2, 5, 3  → 1 ,2 |  5, 3 →  1 ,2, 3 | 5 → 1,2,3,5
     - index:1の入れ物[8,7] -> 7 | 8 -> 7,8
     """
 
     @stop_watch
     def bucket_sort(self, nums: List[int]) -> List[int]:
 
-        max_num: int = max(nums)
         size: int = 6
 
         # bucketsへsort対象の値を分ける
