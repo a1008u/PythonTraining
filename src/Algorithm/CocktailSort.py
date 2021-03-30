@@ -7,7 +7,6 @@ class Solution:
 
     @stop_watch
     def cocktail_sort(self, nums: List[int]) -> List[int]:
-
         '''
         cocktail_sortの説明
         swapを利用して変更があったか目印（印）を利用し、

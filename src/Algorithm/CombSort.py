@@ -7,7 +7,6 @@ class Solution:
 
     @stop_watch
     def comb_sort(self, nums: List[int]) -> List[int]:
-
         '''
         comb_sortの説明
         gapを利用して、ソートをかける。

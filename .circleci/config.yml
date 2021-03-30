@@ -36,7 +36,6 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            cd src
             python -m unittest
 
       - store_artifacts:

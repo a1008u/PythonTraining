@@ -7,7 +7,7 @@ print(dir())
 import string
 import unittest
 
-from RomanToInt.romantoint import Solution
+from src.RomanToInt.romantoint import Solution
 
 class MyTestCase(unittest.TestCase):
     def test_romantoint_ok_1(self):

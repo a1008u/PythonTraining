@@ -24,7 +24,7 @@ class Solution:
             print(index)
             for j in range(len(nums) - index - 1):
                 if nums[j] > nums[j + 1]:
-                    print(j, j+1, nums[j], nums[j + 1])
+                    print(j, j + 1, nums[j], nums[j + 1])
                     nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
         return nums
@@ -41,7 +41,7 @@ class Solution:
             change = False
             for j in range(len(nums) - index - 1):
                 if nums[j] > nums[j + 1]:
-                    print(j, j+1, nums[j], nums[j + 1])
+                    print(j, j + 1, nums[j], nums[j + 1])
                     nums[j], nums[j + 1] = nums[j + 1], nums[j]
                     change = True
 

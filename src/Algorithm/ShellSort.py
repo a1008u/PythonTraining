@@ -8,7 +8,6 @@ class Solution:
 
     @stop_watch
     def shell_sort(self, nums: List[int]) -> List[int]:
-
         '''
         Shell_Sortの説明
         事前にGAPを決めて、そちらを使って一定の区間でsortをしていく
@@ -31,8 +30,8 @@ class Solution:
             for i in range(gap, len_nums):
                 temp = nums[i]
                 j: int = i
-                while j >= gap and nums[j -gap] > temp:
-                    nums[j] = nums[j-gap]
+                while j >= gap and nums[j - gap] > temp:
+                    nums[j] = nums[j - gap]
                     j -= gap
                 nums[j] = temp
             gap //= 2

@@ -7,7 +7,7 @@ print(dir())
 import unittest
 from typing import List
 
-from ReverseInteger.reverseinteger import Solution
+from src.ReverseInteger.reverseinteger import Solution
 
 
 class MyTestCase(unittest.TestCase):
