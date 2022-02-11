@@ -15,7 +15,7 @@ googleapis-common-protos==1.52.0
 idna==2.10
 mccabe==0.6.1
 pep8==1.7.1
-protobuf==3.14.0
+protobuf==3.15.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycodestyle==2.6.0
